@@ -12,9 +12,9 @@
 <!-- CSS Reset : BEGIN -->
 <style>
 
-	/* What it does: Remove spaces around the email design added by some email clients. */
-	/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-	html,
+/* What it does: Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,
 body {
 margin: 0 auto !important;
 padding: 0 !important;
@@ -30,8 +30,8 @@ background:white;
 }
 
 p{
-	margin-block-start: 0 !important;
-  margin-block-end: 0 !important;
+margin-block-start: 0 !important;
+margin-block-end: 0 !important;
 }
 
 /* What it does: Centers email on Android 4.4 */
@@ -100,19 +100,28 @@ display: none !important;
 /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
 @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
 u ~ div .email-container {
-	min-width: 320px !important;
+min-width: 320px !important;
+}
+.founder-img {
+height:200px;
 }
 }
 /* iPhone 6, 6S, 7, 8, and X */
 @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
 u ~ div .email-container {
-	min-width: 375px !important;
+min-width: 375px !important;
+}
+.founder-img {
+height:200px;
 }
 }
 /* iPhone 6+, 7+, and 8+ */
 @media only screen and (min-device-width: 414px) {
 u ~ div .email-container {
-	min-width: 414px !important;
+min-width: 414px !important;
+}
+.founder-img {
+height:200px;
 }
 }
 
@@ -167,6 +176,7 @@ color: #fff;
 
 h1,h2,h3,h4,h5,h6{
 font-family: 'Akrobat', sans-serif;
+font-weight:700;
 margin-top: 0;
 font-weight: normal;
 color: black;
@@ -380,8 +390,9 @@ color: rgba(255,255,255,1);
 
 
 @media screen and (max-width: 500px) {
-
-
+	.founder-img {
+height:200px;
+}
 }
 
 .black-banner {
@@ -397,9 +408,10 @@ margin: 0;
 .logo-bg{
 background-image: url(https://cdn.shopify.com/s/files/1/0027/1043/7955/files/Krahs_Logo_540x.png?v=1535671987);
 width:100%;
-height:75px;
+height:50px;
 background-size: contain;
 background-repeat: no-repeat;
+background-position: center; 
 }
 .percent5-padding {
 padding: 2.5%;
@@ -414,19 +426,44 @@ height:auto;
 float:left;
 padding: 0 15px;
 width:auto;
-height:300px;
+height:275px;
 }
 
 .p-text {
-	font-size: 14px;
-	line-height: 30px;
+font-size: 14px;
+line-height: 30px;
 }
 
 .padded-text {
-	padding: 0 2%;
+padding: 0 4%;
 }
 .left-align-text {
-	text-align:left;
+text-align:left;
+}
+
+.paris-text {
+font-size:24px;
+color:black;
+font-family: ParisScript-Regular;
+}
+
+.shark-bite-footer {
+	height: 400px;
+	background-image: url("https://cdn.shopify.com/s/files/1/0027/1043/7955/files/bottom-bite.png?319");
+	background-repeat: no-repeat;
+	background-size:cover;
+	width: 100%;
+	background-position:left;
+	margin-top: -100px;
+	position: relative;
+}
+
+.spam-compliance {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	right: 0;
+	top:0;
 }
 
 </style>
@@ -439,96 +476,80 @@ height:300px;
 <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
 &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
 </div>
-<div style="max-width: 600px; margin: 0 auto;" class="email-container">
+<div style="max-width: 600px; margin: 0 auto;border: black solid 3px" class="email-container">
 <!-- BEGIN BODY -->
 <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-		<div class="black-banner percent5-padding">
-				<h2 class="white-text ">WELCOME TO</h2>
-			</div>
-			<div class="white-banner" style="padding:5%;">
-					<div class="logo-bg"></div>
-			</div>
-			
-	<tr>
-		<td>
-			<div class="bg_white" style="text-align:center;">
-					<img style="width:50%;height:auto;" src="https://cdn.shopify.com/s/files/1/0027/1043/7955/files/sharktooth.png?313" />
-					<div class="heading-section heading-section-white bg_white">
-							<p class="padded-text" style="padding-bottom:25px;">Did you really think I was gonna make it that easy? On May 2nd everything will be revealed! The countdown continues...</p>
-						</div>
-			</div>
-		</td>
-	</tr>
+	<div class="black-banner percent5-padding">
+			<h2 class="white-text ">WELCOME TO</h2>
+		</div>
+		<div class="white-banner" style="padding:5%;">
+				<div class="logo-bg"></div>
+		</div>
 		
+<tr>
+	<td>
+		<div class="bg_white" style="text-align:center;">
+				<img style="width:50%;height:auto;" src="https://cdn.shopify.com/s/files/1/0027/1043/7955/files/sharktooth.png?313" />
+				<div class="heading-section heading-section-white bg_white" style="margin-top:5px;">
+						<p class="padded-text" >Did you really think I was gonna make it that easy?<br> On May 2nd everything will be revealed!<br> The countdown continues...</p>
+					<p class="paris-text" style="padding-bottom:25px;padding-top:25px;">xx Theresa</p>
+					</div>
+		</div>
+	</td>
+</tr>
 	
+
 <!-- 1 Column Text + Button : END -->
 </table>
-<div class="black-banner">
-	<h2 style="color:white;font-size:13px;">Make sure you're following us by clicking the icons below</h2>
+<div class="black-banner" style="padding: 2%;">
+<h2 style="color:white;font-size:14px;">Make sure you're following us by clicking the icons below</h2>
 <div class="social-icons">
-		<a>
-			<img class="social-icon" src="http://www.logospng.com/images/3/instagram-logo-white-ndash-pahang-fa-official-website-3836.png"/>
-		</a>
-		<a>
-			<img class="social-icon" src="http://www.logospng.com/images/3/instagram-logo-white-ndash-pahang-fa-official-website-3836.png"/>
-		</a>
-		<a>
-			<img class="social-icon" src="http://www.logospng.com/images/3/instagram-logo-white-ndash-pahang-fa-official-website-3836.png"/>
-		</a>
-		<a>
-			<img class="social-icon" src="http://www.logospng.com/images/3/instagram-logo-white-ndash-pahang-fa-official-website-3836.png"/>
-		</a>
-		<a>
-			<img class="social-icon" src="http://www.logospng.com/images/3/instagram-logo-white-ndash-pahang-fa-official-website-3836.png"/>
-		</a>
-	</div>
+	<a href="">
+		<img class="social-icon" src="https://cdn.shopify.com/s/files/1/0027/1043/7955/files/icons8-facebook.png?318"/>
+	</a>
+	<a href="">
+		<img class="social-icon" src="https://cdn.shopify.com/s/files/1/0027/1043/7955/files/icons8-instagram_new.png?318"/>
+	</a>
+	<a href="">
+		<img class="social-icon" src="https://cdn.shopify.com/s/files/1/0027/1043/7955/files/icons8-twitter.png?318"/>
+	</a>
+	<a href="">
+		<img class="social-icon" src="https://cdn.shopify.com/s/files/1/0027/1043/7955/files/icons8-youtube.png?318"/>
+	</a>
+	<a href="">
+		<img class="social-icon" src="http://www.logospng.com/images/3/instagram-logo-white-ndash-pahang-fa-official-website-3836.png"/>
+	</a>
+</div>
 </div>
 
 <div class="bg_white padded-text" style="text-align:center;">
-	<h2>Our Story</h2>
-	<p class="p-text">Krahs (/krôs/) is more than a swimwear line. We are on a mission to empower and encourage women to love themselves. We want to take the pressure off these ladies and remind them that there is no right or wrong way to wear a swimsuit.<br>
+<h2 style="padding-top:27px;">Our Story</h2>
+<p class="p-text">Krahs (/krôs/) is more than a swimwear line. We are on a mission to empower and encourage women to love themselves. We want to take the pressure off these ladies and remind them that there is no right or wrong way to wear a swimsuit.
 
-			Our suits were made to convey the message that being fierce and strong is beautiful and can also be feminine. Take a risk; take a bite out of life with confidence.</p>
-			<h2>About The Founder</h2>
-			<p><img src="https://cdn.shopify.com/s/files/1/0027/1043/7955/files/founder.png?314" class="founder-img"></p>
-			<p class="p-text left-align-text padded-text">Theresa Marie Mingus was born in Richmond, CA, and from a very young age, she faced tremendous hardships, including her mother’s ongoing drug abuse and neglect, and an absentee father.  She lived on the streets for much of her life, and dealt with things as a child that forced her to choose between two paths - to surrender, or to rise.</p> 
+		<br>Our suits were made to convey the message that being fierce and strong is beautiful and can also be feminine. Take a risk; take a bite out of life with confidence.</p>
+		<h2 style="margin-block-start:27px;">About The Founder</h2>
+		<p><img src="https://cdn.shopify.com/s/files/1/0027/1043/7955/files/founder.png?314" class="founder-img"></p>
+		<p class="p-text left-align-text padded-text">Theresa Marie Mingus was born in Richmond, CA, and from a very young age, she faced tremendous hardships, including her mother’s ongoing drug abuse and neglect, and an absentee father.  She lived on the streets for much of her life, and dealt with things as a child that forced her to choose between two paths - to surrender, or to rise.</p> 
 
-			<p class="p-text left-align-text padded-text">With resiliency and an open heart, Theresa was able to actively manifest the negativity in her life into positives.</p>
-					
-			<br><p class="p-text left-align-text padded-text">The mission and driving force behind her brand, is about giving others the bravery to dream big, and to find a way through tough circumstances to RISE. Something she, herself, has done.</p>
-					
-			<br><p class="p-text left-align-text padded-text">She took her big dreams to Los Angeles and soon after relocating  found herself working side-by-side with two of the most iconic fashion and pop culture icons of her generation, Kim Kardashian and Selena Gomez.</p>
-					
-			<br><p class="p-text left-align-text padded-text">During her time working with both women, she accumulated invaluable experience and insight into what it takes to design a successful brand.</p>
-					
-			<br><p class="p-text left-align-text padded-text">Theresa is excited to be able to share her brand, and the culmination of her life’s work and dedication to rise with the world. This swimwear brand is so much bigger than just cloth, it's a representation of all of our ability to make great change in our own lives in spite of our circumstances. </p>
+		<br><p class="p-text left-align-text padded-text">With resiliency and an open heart, Theresa was able to actively manifest the negativity in her life into positives.</p>
+				
+		<br><p class="p-text left-align-text padded-text">The mission and driving force behind her brand, is about giving others the bravery to dream big, and to find a way through tough circumstances to RISE. Something she, herself, has done.</p>
+				
+		<br><p class="p-text left-align-text padded-text">She took her big dreams to Los Angeles and soon after relocating  found herself working side-by-side with two of the most iconic fashion and pop culture icons of her generation, Kim Kardashian and Selena Gomez.</p>
+				
+		<br><p class="p-text left-align-text padded-text">During her time working with both women, she accumulated invaluable experience and insight into what it takes to design a successful brand.</p>
+				
+		<br><p class="p-text left-align-text padded-text" style="padding-bottom: 27px;">Theresa is excited to be able to share her brand, and the culmination of her life’s work and dedication to rise with the world. This swimwear brand is so much bigger than just cloth, it's a representation of all of our ability to make great change in our own lives in spite of our circumstances. </p>
+		
+
 	</div>
-
-<div class="black-banner footer">
+	<div class="shark-bite-footer">
+	</div>
 	
-		<table>
-				<tr>
-					<td valign="top" width="33.333%">
-						<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td style="text-align: left; padding-right: 10px;">
-									<p>&copy; 2019 KRAHS. All Rights Reserved.</p>
-								</td>
-							</tr>
-						</table>
-					</td>
-					<td valign="top" width="33.333%">
-						<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td style="text-align: right; padding-left: 5px; padding-right: 5px;">
-									<p><a href="#" style="color: rgba(255,255,255,.4);">Unsubcribe</a></p>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-</div>
+	<hr>
+	<div>
+	<font face="Helvetica,Sans-Serif" size="1" color="#555555">
+	This email was sent to <strong>%%!contact_email%%</strong> by <strong>%%!account_organization%%</strong></font></div><div><font face="Helvetica,Sans-Serif" size="1" color="#555555">%%!account_address1%% | %%!account_city%% |  %%!account_state%% | %%!account_zip%%<br/><a href="%%!forward_url%%">Forward to a friend</a> | <a href="%%!manage_url%%">Manage Preferences</a> | <a href="%%!unsubscribe_url%%">Unsubscribe</a></font></div>
 
 </div>
 </center>
